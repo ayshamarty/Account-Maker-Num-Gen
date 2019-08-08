@@ -18,7 +18,7 @@ public class NumGenServiceMockitoTests {
 
 	@Test
 	public void numGenTest() {
-		assertTrue(numGen.generateNumber() instanceof Integer);
+		assertTrue(numGen.generateNumber() instanceof Long);
 	}
 
 	@Test
@@ -33,6 +33,7 @@ public class NumGenServiceMockitoTests {
 
 	@Test
 	public void accountGenRegExTest() {
+		System.out.println(numGen.generateAccount());
 		assertTrue(numGen.generateAccount().matches(regEx));
 	}
 
